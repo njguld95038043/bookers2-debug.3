@@ -1,4 +1,8 @@
-<h2>Results index</h2>
+<% if @range == "User" %>
+ <h2>Users Search for <%= @name %></h2>
+<% else %>
+ <h2>Books Search for <%= @title %></h2>
+ <% end %>
 
 <table>
   <% if @range == "User" %>
